@@ -1,0 +1,10 @@
+---
+title: "gatingfc - An Introduction"
+author: "Kevin Brosnan"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{gatingfc - An Introduction}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
