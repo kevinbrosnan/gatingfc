@@ -1,0 +1,8 @@
+---
+output: github_document
+---
+
+# gatingfc
+
+[![Travis Build Status](https://travis-ci.org/significantstats/gatingfc.svg?branch=master)](https://travis-ci.org/significantstats/gatingfc)
+[![Coverage Status](https://img.shields.io/codecov/c/github/significantstats/gatingfc/master.svg)](https://codecov.io/github/significantstats/gatingfc?branch=master)
