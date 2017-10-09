@@ -7,7 +7,7 @@ test_that("If only one column of data input then report error", {
 
 test_that("If more than two columns of data input then report warning", {
   x <- matrix(1, nrow = 30, ncol = 3)
-  expect_warning(make_grid(x = x, min = 0, max = 255),
+  expect_warning(make_grid(x = x),
                  "\"x\" has more than 2 dimensions. Using the first and second columns")
 })
 
@@ -27,5 +27,5 @@ test_that("Working cases with matrix and two vector inputs", {
                 0, 0, 0, 1, 0, 0, 0, 0,
                 0, 0, 0, 0, 0, 0, 0, 0),
               nrow = 8, ncol = 8, byrow = TRUE)
-  expect_equal(make_grid(x = x, min = 0, max = 7), z)
+  expect_equal(make_grid(x = x), z)
 })
