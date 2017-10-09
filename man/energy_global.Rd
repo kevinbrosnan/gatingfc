@@ -20,7 +20,7 @@ grid. The tendency of the overall grid position is provided through
 \code{trend}.
 }
 \examples{
-  x <- matrix(sample(c(-1, 1), times = 16, prob = c(0.6, 0.4)), nrow = 4)
+  x <- matrix(sample(c(-1, 1), size = 16, prob = c(0.6, 0.4), replace = TRUE), nrow = 4)
   energy_global(x)
 
 }

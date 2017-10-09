@@ -10,7 +10,7 @@
 #' @return the value of the global energy function
 #'
 #' @examples
-#'   x <- matrix(sample(c(-1, 1), times = 16, prob = c(0.6, 0.4)), nrow = 4)
+#'   x <- matrix(sample(c(-1, 1), size = 16, prob = c(0.6, 0.4), replace = TRUE), nrow = 4)
 #'   energy_global(x)
 #'
 #' @author Kevin Brosnan (\email{kevin.c.brosnan@@ul.ie})
@@ -20,11 +20,11 @@
 energy_global <- function(x, trend = -1) {
 
   if (trend != 1 && trend != -1) {
-    stop("\"trend\" must be either +1 or -1")
+    stop("'trend' must be either 1 or -1")
   }
 
-  if (!is.matrix(x) && !is.data.frame(x) && class(x) != "gatingfc_grid") {
-    stop("\"x\" must be a matrix, data frame or of class \"gatingfc_grid\"")
+  if (class(x) != "matrix" && class(x) != "gatingfc_grid") {
+    stop("'x' must be a matrix or of class 'gatingfc_grid'")
   }
 
   y <- as.matrix(x)
