@@ -12,24 +12,24 @@
 #' @author Kevin Brosnan (\email{kevin.c.brosnan@@gmail.com})
 #'
 #' @examples
-#'   y <- matrix(sample(c(-1, 1), size = 16, prob = c(0.6, 0.4)), nrow = 4)
-#'   f <- matrix(sample(c(-1, 1), size = 16, prob = c(0.65, 0.35), nrow = 4))
-#'   energy_fidelity()
+#'   y <- matrix(sample(c(-1, 1), size = 16, prob = c(0.6, 0.4), replace = TRUE), nrow = 4)
+#'   f <- matrix(sample(c(-1, 1), size = 16, prob = c(0.65, 0.35), replace = TRUE), nrow = 4)
+#'   energy_fidelity(y = y, f = f)
 #'
 #' @export
 
 energy_fidelity <- function(y, f) {
 
-  if (class(y) != "gatingfc_grid" || !is.matrix(y)) {
-    stop("\"y\" and \"f\" must be a matrix, data frame or of class \"gatingfc_grid\"")
+  if (class(y) != "gatingfc_grid" && class(y) != "matrix") {
+    stop("'y' and 'f' must be a matrix, data frame or of class 'gatingfc_grid', y")
   }
 
-  if (!is.matrix(f) || class(f) != "gatingfc_grid") {
-    stop("\"y\" and \"f\" must be a matrix, data frame or of class \"gatingfc_grid\"")
+  if (class(f) != "matrix" && class(f) != "gatingfc_grid") {
+    stop("'y' and 'f' must be a matrix, data frame or of class 'gatingfc_grid'")
   }
 
   if (nrow(y) != nrow(f) || ncol(y) != ncol(f)) {
-    stop("\"y\" and \"f\" are not of the same size")
+    stop("'y' and 'f' are not of the same size")
   }
 
   energy <- -sum(y * f)

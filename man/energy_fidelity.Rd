@@ -20,9 +20,9 @@ the difference between the underlying observed data and the current
 configuration of the model.
 }
 \examples{
-  y <- matrix(sample(c(-1, 1), size = 16, prob = c(0.6, 0.4)), nrow = 4)
-  f <- matrix(sample(c(-1, 1), size = 16, prob = c(0.65, 0.35), nrow = 4))
-  energy_fidelity()
+  y <- matrix(sample(c(-1, 1), size = 16, prob = c(0.6, 0.4), replace = TRUE), nrow = 4)
+  f <- matrix(sample(c(-1, 1), size = 16, prob = c(0.65, 0.35), replace = TRUE), nrow = 4)
+  energy_fidelity(y = y, f = f)
 
 }
 \author{
