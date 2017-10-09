@@ -25,5 +25,5 @@ grid. The tendency of the overall grid position is provided through
 
 }
 \author{
-Kevin Brosnan (\email(kevin.c.brosnan@ul.ie))
+Kevin Brosnan (\email{kevin.c.brosnan@ul.ie})
 }
