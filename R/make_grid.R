@@ -45,5 +45,6 @@ make_grid <- function(x) {
   index <- table(index)
 
   mat.grid[as.numeric(names(index))] <- index
+  class(mat.grid) <- "gatingfc_grid"
   return(mat.grid)
 }
