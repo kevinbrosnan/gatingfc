@@ -13,7 +13,7 @@
 #'   x <- matrix(sample(c(-1, 1), times = 16, prob = c(0.6, 0.4)), nrow = 4)
 #'   energy_global(x)
 #'
-#' @author Kevin Brosnan (\email(kevin.c.brosnan@@ul.ie))
+#' @author Kevin Brosnan (\email{kevin.c.brosnan@@ul.ie})
 #'
 #' @export
 

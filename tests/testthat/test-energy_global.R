@@ -11,7 +11,7 @@ test_that("If trend in not equal to +1 or -1 then report error", {
 })
 
 test_that("If x is not a matrix or of class gatingfc_grid", {
-  x <- matrix(sample(c(-1, 1), size = 16), nrow = 4)
+  x <- matrix(sample(c(-1, 1), size = 16, replace = TRUE), nrow = 4)
   y <- x
   x <- data.frame(x)
   class(y) <- "gatingfc"
