@@ -8,3 +8,5 @@ vignette: >
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
+
+This will be the introductory vignette for gatingfc
