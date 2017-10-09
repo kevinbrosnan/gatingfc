@@ -5,7 +5,7 @@
 #'
 #' It addresses four of the objectives of the flow cytometry analysis framework:
 #'
-#' \itemize {
+#' \itemize{
 #' \item Normalisation
 #' \item Outlier Removal
 #' \item Gating
