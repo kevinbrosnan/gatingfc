@@ -6,6 +6,11 @@
 \usage{
 gating(x, var.names = NULL)
 }
+\arguments{
+\item{x}{data frame with variables to be gated}
+
+\item{var.names}{the variables to be used for gating}
+}
 \description{
 gating
 }

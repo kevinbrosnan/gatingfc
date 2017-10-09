@@ -1,5 +1,8 @@
 #' gating
 #'
+#' @param x data frame with variables to be gated
+#' @param var.names the variables to be used for gating
+#'
 #' @export gating
 gating <- function(x, var.names = NULL) {
 
