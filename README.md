@@ -1,7 +1,3 @@
----
-output: github_document
----
-
 # gatingfc
 
 [![Travis Build Status](https://travis-ci.org/significantstats/gatingfc.svg?branch=master)](https://travis-ci.org/significantstats/gatingfc)
