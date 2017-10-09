@@ -24,7 +24,7 @@ This function produces a grid of bivariate count data observed in flow
  show the bivariate counts.
 }
 \examples{
- x <- rituximab[, c(1,2)]
+ x <- matrix(sample(c(0:7), size = 10, replace = TRUE), ncol = 2)
  y <- make_grid(x)
 
 }

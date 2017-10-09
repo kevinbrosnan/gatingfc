@@ -12,7 +12,7 @@
 #' representing on cytometry variable.
 #'
 #' @examples
-#'  x <- rituximab[, c(1,2)]
+#'  x <- matrix(sample(c(0:7), size = 10, replace = TRUE), ncol = 2)
 #'  y <- make_grid(x)
 #'
 #' @return A square count matrix representing the observed data. Values greater
@@ -25,10 +25,10 @@
 make_grid <- function(x) {
 
   if (is.null(dim(x)) || dim(x)[2] < 2) {
-    stop("\"x\" needs to be a matrix of at least two columns")
+    stop("'x' needs to be a matrix of at least two columns")
   }
   if (dim(x)[2] > 2) {
-    warning("\"x\" has more than 2 dimensions. Using the first and second columns")
+    warning("'x' has more than 2 dimensions. Using the first and second columns")
   }
 
   y <- x[,2]
