@@ -2,6 +2,7 @@
 
 language: R
 sudo: true
+cache: packages
 dist: trusty
 
 after_success:
