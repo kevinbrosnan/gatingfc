@@ -11,6 +11,14 @@ gating(x, var.names = NULL)
 
 \item{var.names}{the variables to be used for gating}
 }
+\value{
+a data frame with the model output specified as:
+}
 \description{
-gating
+The \code{gating} function is the main component of the \code{gatingfc}
+package. It combines many of the other functions within this package
+and provides a wrapper function to automated the procedure of gating.
+}
+\author{
+Kevin Brosnan (\email{kevin.c.brosnan@gmail.com})
 }
