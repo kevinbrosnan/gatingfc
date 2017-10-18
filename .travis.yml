@@ -5,5 +5,9 @@ sudo: true
 cache: packages
 dist: trusty
 
+before_install:
+- sudo rm -vf /etc/apt/sources.list.d/*riak*
+- sudo apt-get update
+
 after_success:
   - Rscript -e 'covr::codecov()'
