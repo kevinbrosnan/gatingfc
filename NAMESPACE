@@ -2,5 +2,9 @@
 
 export(energy_fidelity)
 export(energy_global)
+export(energy_neighbourhood)
 export(gating)
 export(make_grid)
+export(neighbourhood_moore)
+export(neighbourhood_neumann)
+export(neighbourhoods)
